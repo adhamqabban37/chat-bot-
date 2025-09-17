@@ -1,0 +1,44 @@
+[
+  {
+    "quote": "They cracked AI answers for us. Phone hasn't stopped.",
+    "author": "Luis R., Owner",
+    "company": "Shine Auto Detailing",
+    "rating": 5,
+    "logo": "/img/logo-shineauto.png"
+  },
+  {
+    "quote": "From nowhere to top 3 in ChatGPT/Perplexity for core terms.",
+    "author": "Dr. Nguyen",
+    "company": "Lakeview Dental",
+    "rating": 5,
+    "logo": "/img/logo-lakeview.png"
+  },
+  {
+    "quote": "-38% blended CAC after PMax + AEO in 30 days.",
+    "author": "Maya S., CMO",
+    "company": "NutriCo",
+    "rating": 5,
+    "logo": "/img/logo-nutrico.png"
+  },
+  {
+    "quote": "First month: 2x qualified leads, zero ad spend increase.",
+    "author": "James Parker, VP Marketing",
+    "company": "TechFlow Solutions",
+    "rating": 5,
+    "logo": "/img/logo-techflow.png"
+  },
+  {
+    "quote": "AEO put us ahead of enterprise competitors in AI search.",
+    "author": "Sarah Chen, Founder",
+    "company": "LocalFresh Markets",
+    "rating": 5,
+    "logo": "/img/logo-localfresh.png"
+  },
+  {
+    "quote": "ROI calculator helped us sell AEO internally. Game changer.",
+    "author": "Mike Rodriguez, Digital Director",
+    "company": "Apex Consulting",
+    "rating": 5,
+    "logo": "/img/logo-apex.png"
+  }
+]

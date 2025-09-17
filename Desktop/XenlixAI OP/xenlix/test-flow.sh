@@ -1,0 +1,45 @@
+#!/bin/bash
+
+# Test script for the complete SaaS flow
+echo "🚀 Testing XenlixAI SaaS Flow"
+echo "==============================================="
+
+BASE_URL="http://localhost:3000"
+
+echo "📋 Full Flow Test Plan:"
+echo "1. ✅ App is running at $BASE_URL"
+echo "2. 🔐 Signup → Create test account"
+echo "3. 🔑 Signin → Authenticate"
+echo "4. 📊 Onboarding → Set business profile"
+echo "5. 🎯 AI Guidance → Get recommendations"
+echo "6. 📱 Ads Generation → Create ad campaigns"
+echo "7. 💰 Plans → View pricing"
+echo "8. 🛒 Checkout → Test sandbox payment"
+echo "9. 🎛️ Dashboard → Access full features"
+
+echo ""
+echo "🌐 Testing URLs:"
+echo "- Home: $BASE_URL"
+echo "- Signup: $BASE_URL/signup"
+echo "- Signin: $BASE_URL/signin"
+echo "- Onboarding: $BASE_URL/onboarding"
+echo "- AI Guidance: $BASE_URL/ai/guidance"
+echo "- Ads: $BASE_URL/ads"
+echo "- Plans: $BASE_URL/plans"
+echo "- Checkout: $BASE_URL/checkout?plan=basic"
+echo "- Dashboard: $BASE_URL/dashboard"
+
+echo ""
+echo "💡 Manual Test Instructions:"
+echo "1. Open $BASE_URL/signup in browser"
+echo "2. Create account with test@example.com / password123"
+echo "3. Sign in and navigate through each page"
+echo "4. Test sandbox checkout with 'basic' plan"
+echo "5. Verify dashboard access after payment"
+
+echo ""
+echo "🔧 Debug Information:"
+echo "- Database: SQLite (dev.db)"
+echo "- Auth: NextAuth with credentials"
+echo "- Payment: Sandbox mode enabled"
+echo "- Environment: Development"

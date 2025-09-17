@@ -1,0 +1,50 @@
+{
+  "name": "xenlix",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@auth/prisma-adapter": "^2.10.0",
+    "@hookform/resolvers": "^5.2.2",
+    "@prisma/client": "^6.16.1",
+    "@react-email/render": "^1.2.3",
+    "@types/bcrypt": "^6.0.0",
+    "@types/pg": "^8.15.5",
+    "bcrypt": "^6.0.0",
+    "cheerio": "^1.1.2",
+    "class-variance-authority": "^0.7.1",
+    "lucide-react": "^0.544.0",
+    "nanoid": "^5.1.5",
+    "next": "15.5.3",
+    "next-auth": "^4.24.11",
+    "pg": "^8.16.3",
+    "prisma": "^6.16.1",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-hook-form": "^7.62.0",
+    "resend": "^6.1.0",
+    "stripe": "^18.5.0",
+    "zod": "^4.1.8",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@playwright/test": "^1.55.0",
+    "@tailwindcss/postcss": "^4",
+    "@types/cheerio": "^1.0.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
