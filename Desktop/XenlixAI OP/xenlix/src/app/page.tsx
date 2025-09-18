@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import Testimonials from "./(components)/Testimonials";
 import LogoRow from "./(components)/LogoRow";
 import JsonLd from "./(components)/JsonLd";
+import WebsiteBuilderButton from "../components/WebsiteBuilderButton";
 import { orgAggregateRatingJsonLd, calculateAggregateRating } from "./(lib)/schema";
 
 // Testimonials data for schema calculation
@@ -12,9 +13,9 @@ const testimonials = [
 ];
 
 export const metadata: Metadata = {
-  title: "XenlixAI | AI Marketing Automation Platform for Small Business",
-  description: "Scale your business with AI-driven marketing automation, website building, SEO optimization, and ad creation. Get found in AI search engines like ChatGPT and Gemini.",
-  keywords: "AI marketing automation, AI website builder, AI SEO optimization, small business marketing, ChatGPT optimization, AI search visibility",
+  title: "XenlixAI | AI-Powered SEO Automation & Optimization Platform",
+  description: "Dominate search engines with AI-powered SEO automation. Get found in Google, ChatGPT, Gemini, and AI search engines. Professional SEO optimization for small businesses.",
+  keywords: "AI SEO automation, SEO optimization, ChatGPT SEO, AI search optimization, local SEO, technical SEO, keyword research automation",
 };
 
 export default function Home() {
@@ -29,7 +30,7 @@ export default function Home() {
         "name": "What is XenlixAI?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "XenlixAI is an AI-powered marketing platform that helps businesses create websites, optimize SEO, and generate ad campaigns automatically."
+          "text": "XenlixAI is an AI-powered SEO automation platform that helps businesses optimize their websites, improve search rankings, and get found in Google, ChatGPT, Gemini, and other AI search engines."
         }
       },
       {
@@ -37,7 +38,15 @@ export default function Home() {
         "name": "Who is XenlixAI for?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Small to medium businesses, startups, and entrepreneurs looking to scale quickly with AI-driven marketing automation."
+          "text": "Small to medium businesses, startups, and entrepreneurs looking to improve their SEO rankings and organic traffic with AI-powered automation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does AI SEO automation work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our AI analyzes your website, performs keyword research, fixes technical SEO issues, optimizes content, and implements schema markup automatically to improve your search engine rankings."
         }
       }
     ]
@@ -56,13 +65,13 @@ export default function Home() {
           </Link>
           <div className="hidden md:flex space-x-8">
             <Link href="/ai-seo-automation" className="text-gray-300 hover:text-white transition-colors">
-              SEO Automation
+              SEO Services
             </Link>
-            <Link href="/ai-website-builder" className="text-gray-300 hover:text-white transition-colors">
-              Website Builder
+            <Link href="/seo-analyzer" className="text-gray-300 hover:text-white transition-colors">
+              SEO Analyzer
             </Link>
-            <Link href="/vs-competitors" className="text-gray-300 hover:text-white transition-colors">
-              Compare
+            <Link href="/case-studies" className="text-gray-300 hover:text-white transition-colors">
+              Case Studies
             </Link>
             <Link href="/plans" className="text-gray-300 hover:text-white transition-colors">
               Pricing
@@ -78,26 +87,26 @@ export default function Home() {
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-            Scale Your Business with AI Marketing
+            Dominate Search with AI-Powered SEO
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            AI-powered marketing automation platform that builds websites, optimizes SEO, creates ads, and gets you found in ChatGPT, Gemini, and other AI search engines.
+            Professional SEO automation that gets you found in Google, ChatGPT, Gemini, and all AI search engines. Boost your rankings and drive more organic traffic.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/plans"
               className="bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold py-4 px-8 rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all duration-200 text-lg"
             >
-              Start Free Trial
+              Start SEO Automation
             </Link>
             <Link
               href="/contact"
               className="border border-purple-400 text-purple-400 font-bold py-4 px-8 rounded-lg hover:bg-purple-400 hover:text-white transition-all duration-200 text-lg"
             >
-              Book a Demo
+              Get SEO Audit
             </Link>
           </div>
-          <p className="text-gray-400 mt-4">14-day free trial • No credit card required • Cancel anytime</p>
+          <p className="text-gray-400 mt-4">Free SEO audit • 14-day trial • No credit card required</p>
         </div>
       </section>
 
@@ -105,28 +114,16 @@ export default function Home() {
       <section id="features" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-white text-center mb-16">
-            Everything You Need to Dominate AI Search
+            Complete SEO Automation Platform
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-8 text-center">
-              <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-4">AI Website Builder</h3>
-              <p className="text-gray-300">
-                Build professional websites in minutes with our one-click AI builder. Mobile-optimized and SEO-ready.
-              </p>
-            </div>
-            
             <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-8 text-center">
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-white mb-4">SEO on Autopilot</h3>
+              <h3 className="text-xl font-bold text-white mb-4">AI SEO Automation</h3>
               <p className="text-gray-300">
                 Automated keyword research, technical SEO fixes, and schema markup to rank higher in search engines.
               </p>
@@ -138,9 +135,22 @@ export default function Home() {
                   <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-white mb-4">AI Ad Creator</h3>
+              <h3 className="text-xl font-bold text-white mb-4">Local SEO Domination</h3>
               <p className="text-gray-300">
-                Generate high-converting ad copy and creatives for Facebook, Google, and other platforms automatically.
+                Optimize for local search, Google My Business, and location-based AI search queries.
+              </p>
+            </div>
+            
+            <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-8 text-center">
+              <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                  <path fillRule="evenodd" d="M4 5a2 2 0 012-2v1a1 1 0 102 0V3a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm2.5 7a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-4">AI Search Optimization</h3>
+              <p className="text-gray-300">
+                Get found in ChatGPT, Gemini, Copilot, and other AI search engines with answer-engine optimization.
               </p>
             </div>
             
@@ -151,12 +161,15 @@ export default function Home() {
                   <path fillRule="evenodd" d="M4 5a2 2 0 012-2v1a1 1 0 102 0V3a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm2.5 7a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-white mb-4">Analytics Dashboard</h3>
+              <h3 className="text-xl font-bold text-white mb-4">SEO Analytics</h3>
               <p className="text-gray-300">
-                Real-time insights on website performance, SEO rankings, and ad campaign ROI in one dashboard.
+                Real-time insights on rankings, traffic, and SEO performance with actionable recommendations.
               </p>
             </div>
           </div>
+          
+          {/* Website Builder CTA */}
+          <WebsiteBuilderButton />
         </div>
       </section>
 
@@ -231,16 +244,16 @@ export default function Home() {
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
-            Ready to Scale with AI Marketing?
+            Ready to Dominate Search Results?
           </h2>
           <p className="text-xl text-gray-300 mb-8">
-            Join thousands of businesses automating their marketing and dominating AI search results.
+            Join thousands of businesses using AI-powered SEO to increase their organic traffic and rankings.
           </p>
           <Link
             href="/plans"
             className="bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold py-4 px-8 rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all duration-200 inline-block text-lg"
           >
-            Start Your Free Trial
+            Start SEO Automation
           </Link>
         </div>
       </section>
